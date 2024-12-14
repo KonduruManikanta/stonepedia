@@ -1,0 +1,92 @@
+/* Navbar styling */
+.navigation-bar {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.company-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Menu icon styling */
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333; /* Dark gray color for the icon */
+  margin-right: auto;
+}
+
+/* Hover effect for menu icon */
+.menu-icon:hover {
+  color: #007bff; /* Highlight color */
+}
+
+/* Sidebar (Offcanvas) styling */
+.sidebar-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.offcanvas-header {
+  background-color: #f8f9fa; /* Same as navbar background */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Sidebar content styling */
+.offcanvas-body {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.offcanvas-body h5 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.offcanvas-body p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.offcanvas-body .nav-link {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+/* Collapse navbar links for larger screens */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex; /* Ensure the menu icon is visible on smaller screens */
+  }
+
+  .navbar-collapse {
+    display: none; /* Hide the navbar links by default on smaller screens */
+  }
+}

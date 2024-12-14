@@ -1,0 +1,74 @@
+/* Premium Stones Section */
+.premium-stones {
+  background-color: #fafafa; /* Light background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Heading Style */
+.premium-stones h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Container for Stone Cards */
+.stones-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Stone Card */
+.stone-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Stone Cards */
+.stone-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Stone Image */
+.stone-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Stone Name */
+.stone-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Stone Description */
+.stone-card p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .premium-stones h2 {
+      font-size: 30px;
+  }
+
+  .stone-card h3 {
+      font-size: 20px;
+  }
+
+  .stone-card p {
+      font-size: 14px;
+  }
+}

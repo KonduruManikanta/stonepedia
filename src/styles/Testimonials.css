@@ -1,0 +1,152 @@
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 30px;
+  background-color: #b5d3e1;
+  text-align: center;
+}
+
+/* Testimonials Heading */
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Testimonials Content - side by side layout */
+.testimonials-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Testimonials List */
+.testimonials-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial-info {
+  text-align: left;
+}
+
+.testimonial-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.testimonial-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Review Form Section */
+.review-form {
+  flex: 1;
+  text-align: left;
+}
+
+.review-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Google Reviews and Consultation Buttons */
+.google-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.review-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.review-btn:hover, .consult-btn:hover {
+  background-color: #388e3c;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-content {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testimonial-image {
+    margin-bottom: 10px;
+  }
+
+  .google-reviews {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

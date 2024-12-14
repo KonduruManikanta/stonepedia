@@ -1,0 +1,61 @@
+/* Products.css */
+
+/* Styling the Products Section */
+.products-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 60px 20px; /* Spacing around the section */
+  text-align: center; /* Center-align heading */
+  color: #2C3E50; /* Dark text color */
+}
+
+.products-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3498db; /* Accent color for heading */
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Product Cards Layout */
+.product-card {
+  margin-bottom: 20px; /* Space below each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: none; /* Remove default border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card Image Styling */
+.product-card img {
+  max-height: 200px; /* Restrict image height */
+  object-fit: cover; /* Ensure images are well-fitted */
+  border-radius: 5px 5px 0 0; /* Round top corners */
+}
+
+/* Card Title Styling */
+.product-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2C3E50; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+/* Card Text Styling */
+.product-card .card-text {
+  font-size: 1rem;
+  color: #555; /* Softer text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-section h2 {
+    font-size: 2rem; /* Smaller heading font size */
+  }
+
+  .product-card img {
+    max-height: 150px; /* Smaller image height */
+  }
+}

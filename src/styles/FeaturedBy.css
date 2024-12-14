@@ -1,0 +1,76 @@
+/* Featured By Section */
+.featuredBy-section {
+  background-color: #f8f8f8; /* Light background */
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading Style */
+.featuredBy-section h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Logos */
+.featured-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.featured-logos img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Awards Cards */
+.award-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.award-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.award-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.award-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.arrow-icon {
+  font-size: 24px;
+  color: #ff5722; /* Arrow icon color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.arrow-icon:hover {
+  color: #5c6bc0; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .award-cards {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

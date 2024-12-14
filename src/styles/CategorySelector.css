@@ -1,0 +1,67 @@
+/* CategorySelector Styles */
+.category-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: azure;
+    padding: 40px 0; 
+ 
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 45px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .arrow:hover {
+    color: #ff5722; /* Hover color for arrows */
+  }
+  
+  .category-images {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Adjust the width to your preference */
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .category-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px; /* Circle diameter */
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .category-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Styling for the arrows */
+  .arrow.left {
+    position: absolute;
+    left: 250px;
+  }
+  
+  .arrow.right {
+    position: absolute;
+    right: 250px;
+  }
+  

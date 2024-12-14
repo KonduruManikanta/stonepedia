@@ -1,0 +1,58 @@
+.clients-section {
+  text-align: center;
+}
+
+.clients-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-items {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.3s ease-in-out;
+}
+
+.client-item {
+  margin: 0 10px; /* Add space between items */
+  text-align: center;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-nav-btn:first-child {
+  left: 10px;
+}
+
+.carousel-nav-btn:last-child {
+  right: 10px;
+}
+
+.client-logo {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .carousel-items {
+    flex-direction: column;
+  }
+
+  .carousel-nav-btn {
+    top: 10px;
+  }
+}
